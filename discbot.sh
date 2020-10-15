@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [ $(id -u) != 0 ]; then
+
+if [ $(id -u) != 0]; then
     echo "Run this script as root!"
     exit 0
 fi
 
-# 1312312312415135135
 
 if [[ "$#" -eq 0 ]]; then
     echo "No arguments passed."
@@ -13,6 +13,8 @@ if [[ "$#" -eq 0 ]]; then
     echo "Example: sudo ./discbot.sh randomBotName 1234567890123456778"
     exit 0
 fi
+
+
 
 fileName=$_| cut -d '/' -f 2
 projectName=$1
