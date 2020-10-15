@@ -7,6 +7,7 @@ client.on('message', message => {
 		message.reply('pong!');
 	}
 });
+
 client.on('ready', () => {
 	console.log('ready',() => {
 		console.log('I am ready!!')
