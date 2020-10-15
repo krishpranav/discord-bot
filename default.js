@@ -1,6 +1,6 @@
 //discord bot
-//tool name: discordbot
-//language used: javascript
+//tool name: discord bot
+//tool language: javascript
 
 const Discord = require('discord.js')
 const client = new Discord.client();
@@ -13,6 +13,6 @@ client.on('message', message => {
 
 client.on('ready', () => {
 	console.log('ready',() => {
-		console.log('I am ready!!')
+		console.log('I am ready')
 	})
 })
