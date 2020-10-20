@@ -1,7 +1,8 @@
 //discord bot
 //language used: javascript
-const Discod = require('discord.js')
-const client = new Discod.client();
+
+const Discord = require('discord.js')
+const client = new Discord.client();
 
 client.on('message', message => {
 	if (message.content.startWith('ping')){
