@@ -1,7 +1,5 @@
 //discord bot
 //used language: javascript
-
-
 const Discord = require('discord.js');
 const client = new Discord.client();
 
