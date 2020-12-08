@@ -59,14 +59,13 @@ if [[ $output == '' ]]; then
         bash $fileName $projectName $oAuthToken; exit 0
     fi
 
-
-else
-    echo "[!] No installation of NodeJS found on system!. Initiating installation process!"
-    sudo apt update
+else    
+    echo "[!] No installationj of NodeJS found on this system!. Installing Nodejs"
+    sudo apt-get update
     sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
-    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-    sudo apt -y install nodejs
+    curl -sL https://deb.nodesource.com/setup_12.x | sudo -X bash -
+    sudo apt-get -y install nodejs
     clear
-    echo "Successfully installed! Restarting..."
+    echo "Successfully install nodejs! Restarting.."
     bash $fileName $projectName $oAuthToken; exit 0
 fi
