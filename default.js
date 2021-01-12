@@ -2,7 +2,7 @@
 //language used: javascript
 //github.com/krishpranav
 
-const Discord = require('discord.js');
+const Discord = require('disocrd.js');
 const client  = new Discord.client();
 
 client.on('message', message => {
@@ -12,6 +12,5 @@ client.on('message', message => {
 })
 
 client.on('ready', () => {
-	console.log('I am ready');
+	console.log('I am ready!');
 })
-
