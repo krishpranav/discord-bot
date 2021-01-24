@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [ $(id -u) != 0]; then
     echo "Run this script as root!"
     exit 0
@@ -52,7 +51,7 @@ if [[ $output == '' ]]; then
         sudo apt update
         sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
         curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-        sudo apt -y install nodejs
+        sudo apt -y install  
         clear
         version=`node -v`
         echo "Installed Version $version"
