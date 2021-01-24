@@ -11,3 +11,23 @@ client.on("ready", () => {
 	console.log(`Username: ${client.user.tag}`);
 });
 
+client.on("message", (message)=> {
+	if (message.author.bot) return;
+	var prefix = "sup";
+	if (message.content.startsWith(prefix + ""))
+	{
+
+		//the command
+		var commandSplit = message.content.split(" ");
+		var command = commandSplit[1];
+
+		switch(command)
+		{
+			case "hello":
+				message.channel.send("Hello There!")
+				break;
+		}
+	}
+});
+
+client.login("you want to put your discord token here") 
