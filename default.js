@@ -11,7 +11,7 @@ client.on("ready", () => {
 	console.log(`Username: ${client.user.tag}`);
 });
 
-client.on("message", (message)=> {
+client.on("message", (message) => {
 	if (message.author.bot) return;
 	var prefix = "sup";
 	if (message.content.startsWith(prefix + ""))
@@ -24,7 +24,7 @@ client.on("message", (message)=> {
 		switch(command)
 		{
 			case "hello":
-				message.channel.send("Hello There!")
+				message.channel.send("Hello There!!")
 				break;
 		}
 	}
