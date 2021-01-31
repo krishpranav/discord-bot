@@ -17,19 +17,19 @@ client.on("message", (message) => {
 	if (message.content.startsWith(prefix + ""))
 	{
 
-		
 		//the command
 		var commandSplit = message.content.split(" ");
 		var command = commandSplit[1];
 
 		switch(command)
 		{
-			
+
 			case "hello":
 				message.channel.send("Hello There!!")
 				break;
+
 		}
 	}
 });
-
-client.login("you want to put your discord token here") 
+ 
+client.login("You Want To Put Your Discord Token Here")
