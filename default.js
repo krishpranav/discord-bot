@@ -7,7 +7,7 @@ const client  = new Discord.client();
 
 client.on("ready", () => {
 	console.log("SuperBot 3000 has initialized!!")
-	console.log("====User Information====")
+	console.log("===User Information===")
 	console.log(`Username: ${client.user.tag}`);
 });
 
